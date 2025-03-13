@@ -61,6 +61,14 @@ export default function Checkout() {
     return (nightsSum * TAX - nightsSum).toFixed(2);
   };
 
+  const formatarNumero = (valor: string) => {
+    return valor
+      .replace(/\D/g, "") // Remove tudo que não for número
+      .replace(/^(\d{2})(\d)/, "($1) $2") // Coloca parênteses no DDD
+      .replace(/(\d{5})(\d)/, "$1-$2") // Adiciona o hífen
+      .slice(0, 15); // Limita o tamanho máximo
+  };
+
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setShowOverlay(true);
@@ -168,7 +176,7 @@ export default function Checkout() {
                       onChange={(e) =>
                         setGuestFormData({
                           ...guestFormData,
-                          phone: e.target.value,
+                          phone: formatarNumero(e.target.value),
                         })
                       }
                       required
