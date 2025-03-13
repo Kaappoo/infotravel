@@ -1,0 +1,7 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    height: 4rem;
+}

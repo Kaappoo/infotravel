@@ -9,14 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@heroui/autocomplete": "^2.3.17",
+    "@heroui/react": "^2.7.5",
+    "@heroui/slider": "^2.4.13",
+    "@heroui/system": "^2.4.12",
+    "@heroui/theme": "^2.4.12",
+    "@tailwindcss/postcss": "^4.0.13",
+    "framer-motion": "^12.5.0",
+    "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.1"
+    "react-input-mask": "^2.0.4",
+    "tailwindcss": "^4.0.13"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "@types/react-input-mask": "^3.0.6",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "typescript": "^5"
   }
 }
