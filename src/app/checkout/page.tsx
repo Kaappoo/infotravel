@@ -124,7 +124,7 @@ export default function Checkout() {
                 <div className={style.containerTop}>Contato da reserva</div>
                 <div className={style.inputs}>
                   <div className={style.input}>
-                    <label htmlFor="contactName">Nome (Hóspede)</label>
+                    <label htmlFor="contactName">Nome </label>
                     <input
                       type="text"
                       name="contactName"
